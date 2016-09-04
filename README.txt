@@ -1,6 +1,6 @@
 This is another version of the original Adafruit library, ported for STM32.
 Not perfect but is simple, very fast and reliable.
-Should be used in conjunction with the TFTLCD library.
+Tested to work in conjunction with the TFTLCD library (8bit parallel) ported for STM32 (https://github.com/stevstrong/Adafruit_TFTLCD_8bit_STM32).
 
 Features:
 - mapping of the coordinate ranges to the display resolution (default: 240*320)
