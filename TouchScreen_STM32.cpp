@@ -72,6 +72,22 @@ void TouchScreen::calibratePoint(void)
 	} while ( getPoint() );
 }
 /*****************************************************************************/
+void TouchScreen::getCalibrationParameters(int *xmin, int *xmax, int *ymin, int *ymax)
+{
+	*xmin = TouchScreen::xmin;
+	*xmax = TouchScreen::xmax;
+	*ymin = TouchScreen::ymin;
+	*ymax = TouchScreen::ymax;
+}
+/*****************************************************************************/
+void TouchScreen::setCalibrationParameters(int xmin, int xmax, int ymin, int ymax)
+{
+	TouchScreen::xmin = xmin;
+	TouchScreen::xmax = xmax;
+	TouchScreen::ymin = ymin;
+	TouchScreen::ymax = ymax;
+}
+/*****************************************************************************/
 void sortArray(int pos)
 {
 	// it will sort the position in the array from lower to higher value order
