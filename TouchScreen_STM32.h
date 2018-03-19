@@ -20,6 +20,8 @@ class TouchScreen {
 	void rangeSet(int xmax, int ymax);
 	bool getPoint(TSPoint* tsp);
 	void calibratePoint(void);
+	void getCalibrationParameters(int *xmin, int *xmax, int *ymin, int *ymax);
+	void setCalibrationParameters(int xmin, int xmax, int ymin, int ymax);
 	int pressureThreshhold;
 
   private:
